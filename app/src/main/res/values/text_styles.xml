@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.AppCompat.Title1">
+
+        <item name="fontFamily">@font/sf_pro_display_semibold</item>
+        <item name="fontWeight">600</item>
+        <item name="android:textSize">22sp</item>
+        <item name="lineHeight">26.4dp</item>
+
+    </style>
+
+
+    <style name="TextAppearance.AppCompat.Title2">
+
+        <item name="fontFamily">@font/sf_pro_display_semibold</item>
+        <item name="fontWeight">600</item>
+        <item name="android:textSize">20sp</item>
+        <item name="lineHeight">24dp</item>
+
+    </style>
+
+
+    <style name="TextAppearance.AppCompat.Title3">
+
+        <item name="fontFamily">@font/sf_pro_display_medium</item>
+        <item name="fontWeight">500</item>
+        <item name="android:textSize">16sp</item>
+        <item name="lineHeight">19.2dp</item>
+
+    </style>
+
+
+    <style name="TextAppearance.AppCompat.Title4">
+
+        <item name="fontFamily">@font/sf_pro_display_medium</item>
+        <item name="fontWeight">500</item>
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">16.8dp</item>
+
+    </style>
+
+
+    <style name="TextAppearance.AppCompat.Text1">
+
+        <item name="fontFamily">@font/sf_pro_display_regular</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">16.8dp</item>
+
+    </style>
+
+
+    <style name="TextAppearance.AppCompat.ButtonText1">
+
+        <item name="fontFamily">@font/sf_pro_display_semibold</item>
+        <item name="fontWeight">600</item>
+        <item name="android:textSize">16sp</item>
+        <item name="lineHeight">20.8dp</item>
+
+    </style>
+
+
+    <style name="TextAppearance.AppCompat.ButtonText2">
+
+        <item name="fontFamily">@font/sf_pro_display_regular</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">18.2dp</item>
+
+    </style>
+
+
+    <style name="TextAppearance.AppCompat.TabText">
+
+        <item name="fontFamily">@font/sf_pro_display_regular</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">10sp</item>
+        <item name="lineHeight">11dp</item>
+
+    </style>
+
+
+    <style name="TextAppearance.AppCompat.Number">
+
+        <item name="fontFamily">@font/sf_pro_display_regular</item>
+        <item name="fontWeight">600</item>
+        <item name="android:textSize">7sp</item>
+        <item name="lineHeight">7.7dp</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.view.SearchFragment">
+
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                tools:startIconDrawable="@drawable/ic_menu_item_search_default"
+                tools:hint="@string/search_key_words1"
+                app:startIconTint="@color/white"
+                style="@style/SearchEditText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiEditSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColorHint="@color/white"
+                    style="@style/TextAppearance.AppCompat.Text1"
+                    android:enabled="false"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/search_edit_text_background"
+                android:contentDescription="@string/settings_icon_at_search_screen"
+                android:src="@drawable/ic_search_item_settings" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llByCorrespondence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvByCorrespondence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="145 вакансий"
+                style="@style/TextAppearance.AppCompat.Text1"
+                android:textColor="@color/white"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/by_correspondence"
+                android:textColor="@color/blue"
+                style="@style/TextAppearance.AppCompat.Text1"
+                android:layout_marginEnd="6dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/by_correspondence_icon"
+                android:src="@drawable/ic_search_item_filter_arrows"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center"
+                app:tint="@color/blue" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+    
+  
+    <LinearLayout
+        android:id="@+id/llError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_message"
+            style="@style/TextAppearance.AppCompat.Title2"
+            />
+
+        <ImageButton
+            android:id="@+id/imReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/error_message"
+            android:src="@drawable/baseline_autorenew"/>
+
+    </LinearLayout>
+
+</LinearLayout>

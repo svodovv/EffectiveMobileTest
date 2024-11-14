@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="132dp"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardBackgroundColor="@color/gray1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="11dp">
+
+
+        <ImageView
+            android:id="@+id/ivOfferIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            tools:background="@drawable/green_recommendation_icon_background"
+            android:contentDescription="@string/recomend_icon"
+            tools:src="@drawable/ic_search_item_offer_star"
+            android:paddingHorizontal="6dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="6dp"
+            />
+
+        <TextView
+            android:id="@+id/tvRecommendationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:maxLines="3"
+            style="@style/TextAppearance.AppCompat.Title4"
+            tools:text="Временная работа и подработка"
+            />
+
+        <TextView
+            android:id="@+id/tvSelectedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Text1"
+            android:textColor="@color/green"
+            tools:text="Поднять"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

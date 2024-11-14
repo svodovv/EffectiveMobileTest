@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/gray1"
+    android:layout_marginVertical="8dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvAddress"
+            style="@style/TextAppearance.AppCompat.Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            tools:text="Минск" />
+
+        <TextView
+            android:id="@+id/tvPublishedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray3"
+            android:layout_marginTop="10dp"
+            style="@style/TextAppearance.AppCompat.Text1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imBriefcase"
+            tools:text="Опубликовано 20 февраля" />
+
+        <ImageView
+            android:id="@+id/imBriefcase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/briefcase_icon_near_work_exp"
+            android:paddingTop="3.dp"
+            android:src="@drawable/ic_search_item_vacancy_briefcase"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCompanyName"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            style="@style/TextAppearance.AppCompat.Text1"
+            app:layout_constraintStart_toEndOf="@+id/imBriefcase"
+            app:layout_constraintTop_toTopOf="@+id/imBriefcase"
+            tools:text="Опыт от 1 года до 3 лет" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/icon_near_company_name"
+            android:paddingTop="2.dp"
+            android:src="@drawable/ic_search_vacancy_item_watch"
+            app:layout_constraintStart_toEndOf="@+id/tvCompanyName"
+            app:layout_constraintTop_toTopOf="@+id/tvCompanyName"
+            app:tint="@color/gray3" />
+
+        <TextView
+            android:id="@+id/tvCompanyName"
+            style="@style/TextAppearance.AppCompat.Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+            android:paddingBottom="10dp"
+            tools:text="Мобирикс" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextAppearance.AppCompat.Title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingEnd="40dp"
+            android:paddingStart="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLookingNumber"
+            tools:text="UI/UX Designer/Web-дизайнер/Дизайнер интерфеы" />
+
+        <TextView
+            android:id="@+id/tvLookingNumber"
+            style="@style/TextAppearance.AppCompat.Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textColor="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Сейчас просматривает 1 человек"/>
+
+        <ImageView
+            android:id="@+id/ivHeart"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:contentDescription="@string/heart_icon"
+            tools:src="@drawable/ic_search_item_vacancy_heart_empty"
+            android:src="@drawable/ic_search_item_vacancy_heart_fill"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnRespond"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21.dp"
+            style="@style/GreenButtonStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPublishedDate"
+            android:text="@string/respond" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

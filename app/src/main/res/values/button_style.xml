@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SearchEditText" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxBackgroundColor">@color/gray2</item>
+        <item name="boxStrokeColor">@color/transparent</item>
+
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+
+        <item name="hintTextColor">@color/white</item>
+
+        <item name="boxCollapsedPaddingTop">0dp</item>
+
+    </style>
+
+</resources>

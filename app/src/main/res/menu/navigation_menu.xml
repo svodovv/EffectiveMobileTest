@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/searchFragment"
+        android:title="@string/search"
+        android:icon="@drawable/ic_menu_item_search_default"
+        />
+
+    <item
+        android:id="@+id/favoriteFragment"
+        android:title="@string/favorite"
+        android:icon="@drawable/menu_item_heart_selector"
+        />
+
+    <item
+        android:id="@+id/plugFragment"
+        android:title="@string/response"
+        android:icon="@drawable/ic_menu_item_response_delault"/>
+
+    <item
+        android:id="@+id/plugFragment2"
+        android:title="@string/message"
+        android:icon="@drawable/ic_menu_item_message"/>
+
+    <item
+        android:id="@+id/plugFragment3"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_menu_item_person_default"/>
+</menu>

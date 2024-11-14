@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="BottomNavigationViewStyle"  parent="Widget.Design.BottomNavigationView">
+
+        <item name="itemIconSize">@dimen/custom_bottom_navigation_height</item>
+
+        <item name="backgroundTint">@color/shadows</item>
+
+        <item name="labelVisibilityMode">labeled</item>
+
+        <item name="itemIconTint">@color/nav_menu_color</item>
+        <item name="itemTextColor">@color/nav_menu_color</item>
+
+        <item name="itemTextAppearanceActive">@style/TextAppearance.AppCompat.TabText</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.AppCompat.TabText</item>
+
+        <item name="itemRippleColor">@color/transparent</item>
+        <item name="itemBackground">@color/transparent</item>
+    </style>
+
+</resources>

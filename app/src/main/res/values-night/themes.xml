@@ -1,0 +1,10 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EffectiveMobileTest" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:colorBackground">@color/shadows</item>
+        <item name="colorSurface">@color/gray1</item>
+
+        
+    </style>
+
+</resources>

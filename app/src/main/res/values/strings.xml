@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">EffectiveMobileTest</string>
+    <string name="icon_near_company_name">Значек у названии компании</string>
+    <string name="briefcase_icon_near_work_exp">Иконка портфеля у опыта</string>
+    <string name="heart_icon">Икнонка сердца</string>
+    <string name="recomend_icon">Икнонка рекомендации</string>
+    <string name="search">Поиск</string>
+    <string name="profile">Профиль</string>
+    <string name="message">Сообщения</string>
+    <string name="response">Отклики</string>
+    <string name="favorite">Избранное</string>
+    <string name="navigation_icon">иконка навигации</string>
+    <string name="search_key_words1">Должность, ключевые слова</string>
+    <string name="search_key_words2">Должность по подходящим словам</string>
+    <string name="settings_icon_at_search_screen">Иконка настроект на экране поиска</string>
+    <string name="vacancies_for_you">Вакансии для вас</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="plug_screen">Экран заглушка</string>
+    <string name="respond">Откликнуться</string>
+    <string name="error_message">Произошла ошибка, повторите попытку</string>
+    <string name="by_correspondence">По соответствию</string>
+    <string name="by_correspondence_icon">Кнопка по соответстию</string>
+</resources>
